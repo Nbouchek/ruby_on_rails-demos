@@ -7,9 +7,10 @@ class CreateUsers < ActiveRecord::Migration[5.1]
       t.string "email", :default => '', :null => false
       t.string "password", :limit => 40
 
-      t.datetime "created_at"
-      t.datetime "updated_at"
+      # t.datetime "created_at"
+      # t.datetime "updated_at"
 
+      # this is a shorthand for "created_at" and "updated_at"
       t.timestamps
     end
   end
