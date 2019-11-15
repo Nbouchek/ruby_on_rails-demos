@@ -4,12 +4,15 @@ class DemoController < ApplicationController
 
   def index
     # render default template /demo/index
-    render('index') 
+    render('index')
   end
 
   def hello
     # render default template
     @array = [1, 2, 3, 4, 5]
+    @id = params['id']
+    @page = params[:page]
+    render('hello')
   end
 
   def other_hello
