@@ -5,6 +5,7 @@ class CreateUsers < ActiveRecord::Migration[5.1]
       # the following is another way of creating a column of type string
       t.string "last_name", :limit => 50
       t.string "email", :default => '', :null => false
+      t.string "password", :limit => 40
       t.timestamps
     end
   end
