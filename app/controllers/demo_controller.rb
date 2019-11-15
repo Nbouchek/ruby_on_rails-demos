@@ -16,4 +16,9 @@ class DemoController < ApplicationController
     # chaning the default value: /demo/hello to  /demo/hello
     redirect_to(:controller => 'demo', :action => 'index')
   end
+
+  def nacerbits
+    # chaning the default value: /demo/hello to  /demo/hello
+    redirect_to('http://www.nacerbits.com')
+  end
 end

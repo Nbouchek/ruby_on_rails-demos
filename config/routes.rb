@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'demo/index'
   get 'demo/hello'
   get 'demo/other_hello'
+  get 'demo/nacerbits'
 
   # default route may go in the future
   # get ':controller(/:action(/:id))'
