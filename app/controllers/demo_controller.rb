@@ -11,4 +11,9 @@ class DemoController < ApplicationController
     # chaning the default value: /demo/hello to  /demo/hello
     render('index')
   end
+
+  def other_hello
+    # chaning the default value: /demo/hello to  /demo/hello
+    redirect_to(:controller => 'demo', :action => 'index')
+  end
 end
