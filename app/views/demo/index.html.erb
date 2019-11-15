@@ -2,4 +2,5 @@
 
 <a href="/demo/hello">Hello plain html</a> <br/>
 <%= link_to("Hello link_to demo",{:controller=>"demo", :action=>"hello"} )%> <br/>
-<%= link_to("Index page",{:action=>"index"} )%>
+<%= link_to("Index page",{:action=>"index"} )%><br/>
+<%= link_to("Hello with parameters",{:controller=>"demo", :action=>"hello", :page =>5, :id => 40  } )%> <br/>
