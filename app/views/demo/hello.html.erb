@@ -1,15 +1,16 @@
 <h1>Hello world from hello</h1>
 <%= 1 + 1 %> <br/>
 
-<% target = "world"%>
-<%= "Hello #{target}"%>
+<% target = "world" %>
+<%= "Hello #{target}" %>
 
-<br />
+<br/>
 <% @array.each do |n| %>
-<%= n %> <br/>
+  <%= n %> <br/>
 <% end %>
 
-ID: <%= @id  %><br/>
-ID: <%= params[:id]  %><br/>
-page: <%= @page  %><br/>
+ID: <%= @id %><br/>
+ID: <%= params[:id] %><br/>
+page: <%= @page %><br/>
+next page: <%= @page.to_i + 1 %><br/>
 
