@@ -3,7 +3,8 @@ class DemoController < ApplicationController
   layout false
 
   def index
-    # render default template /demo/index 
+    # render default template /demo/index
+    render('hello') 
   end
 
   def hello
