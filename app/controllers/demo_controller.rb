@@ -4,17 +4,16 @@ class DemoController < ApplicationController
 
   def index
     # render default template /demo/index
-    render('hello') 
+    render('index') 
   end
 
   def hello
-    # chaning the default value: /demo/hello to  /demo/hello
-    render('index')
+    # render default template
   end
 
   def other_hello
     # chaning the default value: /demo/hello to  /demo/hello
-    redirect_to(:controller => 'demo', :action => 'index')
+    redirect_to('hello')
   end
 
   def nacerbits
